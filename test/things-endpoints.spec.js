@@ -85,7 +85,7 @@ describe('Things Endpoints', function() {
     })
   })
 
-  describe(`GET /api/things/:thing_id`, () => {
+  describe.only(`GET /api/things/:thing_id`, () => {
     context(`Given no things`, () => {
       it(`responds with 404`, () => {
         const thingId = 123456
